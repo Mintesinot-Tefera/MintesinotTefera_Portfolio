@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { navLinks, profile } from "@/lib/data";
-import { MenuIcon, CloseIcon } from "./Icons";
+import { MenuIcon, CloseIcon, LogoMark } from "./Icons";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +33,7 @@ export default function Navbar() {
       <nav className="section flex h-[68px] items-center justify-between">
         <a href="#top" className="group flex items-center gap-2 font-semibold text-white">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent/10 text-accent ring-1 ring-accent/30 transition group-hover:bg-accent/20">
-            MT
+            <LogoMark className="h-5 w-6" />
           </span>
           <span className="hidden sm:block">{profile.name}</span>
         </a>

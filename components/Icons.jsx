@@ -1,3 +1,15 @@
+export function LogoMark(props) {
+  return (
+    <svg viewBox="0 0 40 32" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+      {/* M */}
+      <path d="M5 26 V8 L13 19 L21 8 V26" />
+      {/* T ligatured off the M's right stem */}
+      <path d="M21 8 H35" />
+      <path d="M28 8 V26" />
+    </svg>
+  );
+}
+
 export function GithubIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
