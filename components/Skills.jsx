@@ -7,7 +7,7 @@ export default function Skills() {
       <div className="section">
         <Reveal>
           <p className="eyebrow">
-            <span className="h-px w-8 bg-accent" /> Skills & tools
+            <span className="h-px w-6 bg-mute" /> Skills & tools
           </p>
           <h2 className="heading">The stack I build with</h2>
         </Reveal>
@@ -15,8 +15,8 @@ export default function Skills() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((group, i) => (
             <Reveal key={group.group} delay={i * 70}>
-              <div className="card h-full p-6 hover:border-accent/25 hover:bg-ink-800/60">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
+              <div className="card h-full p-6 hover:border-accent/25 hover:bg-ink-800">
+                <h3 className="font-mono text-[10px] font-medium uppercase tracking-[0.14em] text-mute">
                   {group.group}
                 </h3>
                 <div className="mt-4 flex flex-wrap gap-2">

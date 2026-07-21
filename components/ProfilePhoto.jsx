@@ -16,10 +16,10 @@ export default function ProfilePhoto({ src = "/profile.jpg", alt, initials = "MT
     return (
       <div className="grid h-full w-full place-items-center bg-gradient-to-br from-ink-700 via-ink-800 to-ink-900">
         <div className="text-center">
-          <span className="block bg-gradient-to-br from-accent to-sky-500 bg-clip-text text-6xl font-bold text-transparent">
+          <span className="block text-5xl font-semibold text-mute">
             {initials}
           </span>
-          <span className="mt-2 block text-[11px] uppercase tracking-[0.25em] text-slate-500">
+          <span className="mt-2 block text-[11px] uppercase tracking-[0.25em] text-mute">
             Add public/profile.jpg
           </span>
         </div>

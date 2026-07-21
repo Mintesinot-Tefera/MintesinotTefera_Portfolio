@@ -26,7 +26,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled
-          ? "border-b border-white/5 bg-ink-950/80 backdrop-blur-xl"
+          ? "border-b border-ink-700 bg-ink-950/80 backdrop-blur-xl"
           : "border-b border-transparent"
       }`}
     >
@@ -43,7 +43,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="rounded-full px-4 py-2 text-sm text-slate-300 transition hover:bg-white/5 hover:text-white"
+                className="rounded-full px-4 py-2 text-sm text-fg transition hover:bg-ink-800 hover:text-white"
               >
                 {link.label}
               </a>
@@ -58,7 +58,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-200 md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-lg border border-ink-700 text-fg md:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
           >
@@ -73,14 +73,14 @@ export default function Navbar() {
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         } transition-opacity duration-200`}
       >
-        <div className="section border-t border-white/5 bg-ink-950/95 pb-6 pt-2 backdrop-blur-xl">
+        <div className="section border-t border-ink-700 bg-ink-950/95 pb-6 pt-2 backdrop-blur-xl">
           <ul className="flex flex-col">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block border-b border-white/5 py-3 text-base text-slate-200"
+                  className="block border-b border-ink-700 py-3 text-base text-fg"
                 >
                   {link.label}
                 </a>

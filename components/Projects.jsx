@@ -8,10 +8,10 @@ export default function Projects() {
       <div className="section">
         <Reveal>
           <p className="eyebrow">
-            <span className="h-px w-8 bg-accent" /> Projects
+            <span className="h-px w-6 bg-mute" /> Projects
           </p>
           <h2 className="heading">Things I&apos;ve built</h2>
-          <p className="mt-3 max-w-2xl text-slate-400">
+          <p className="mt-3 max-w-2xl text-mute">
             A selection of products and platforms I&apos;ve designed and engineered.
             Live projects are linked — click through to explore them.
           </p>
@@ -44,24 +44,24 @@ function ProjectCard({ project }) {
       }`}
     >
       <div className="flex items-start justify-between gap-3">
-        <span className="text-xs font-medium uppercase tracking-wider text-accent">
+        <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-mute">
           {project.type}
         </span>
         {isLive ? (
-          <span className="grid h-8 w-8 place-items-center rounded-lg border border-white/10 text-slate-400 transition group-hover:border-accent/40 group-hover:text-accent">
+          <span className="grid h-8 w-8 place-items-center rounded-lg border border-ink-700 text-mute transition group-hover:border-accent/40 group-hover:text-accent">
             <ExternalLinkIcon className="h-4 w-4" />
           </span>
         ) : (
-          <span className="rounded-full border border-white/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wide text-slate-500">
+          <span className="rounded-full border border-ink-700 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wide text-mute">
             Case study
           </span>
         )}
       </div>
 
-      <h3 className="mt-3 text-lg font-semibold text-white group-hover:text-accent-soft">
+      <h3 className="mt-3 text-base font-semibold text-white">
         {project.name}
       </h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-400">
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-mute">
         {project.description}
       </p>
 
@@ -69,7 +69,7 @@ function ProjectCard({ project }) {
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1 text-xs text-slate-400"
+            className="rounded-md border border-ink-700 bg-ink-800 px-2.5 py-1 text-xs text-mute"
           >
             {tag}
           </span>
