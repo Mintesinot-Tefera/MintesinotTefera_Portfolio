@@ -3,7 +3,7 @@ import { skills } from "@/lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="skills" className="scroll-mt-[68px] pt-12 pb-16 sm:pt-14 sm:pb-24">
       <div className="section">
         <Reveal>
           <p className="eyebrow">

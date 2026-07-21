@@ -67,13 +67,10 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
-      <div
-        className={`md:hidden ${
-          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        } transition-opacity duration-200`}
-      >
-        <div className="section border-t border-ink-700 bg-ink-950/95 pb-6 pt-2 backdrop-blur-xl">
+      {/* Mobile menu — only mounted when open so it never overlays the page while closed */}
+      {open && (
+      <div className="absolute inset-x-0 top-full md:hidden">
+        <div className="section border-t border-ink-700 bg-ink-950 pb-6 pt-2">
           <ul className="flex flex-col">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -96,6 +93,7 @@ export default function Navbar() {
           </a>
         </div>
       </div>
+      )}
     </header>
   );
 }

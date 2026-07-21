@@ -49,7 +49,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="contact" className="scroll-mt-[68px] pt-12 pb-16 sm:pt-14 sm:pb-24">
       <div className="section">
         <Reveal>
           <p className="eyebrow">

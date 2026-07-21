@@ -11,7 +11,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="about" className="scroll-mt-[68px] pt-12 pb-16 sm:pt-14 sm:pb-24">
       <div className="section">
         <Reveal>
           <p className="eyebrow">

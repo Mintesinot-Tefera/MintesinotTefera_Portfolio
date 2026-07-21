@@ -6,7 +6,6 @@ import {
   MailIcon,
   MapPinIcon,
   DownloadIcon,
-  ArrowDownIcon,
 } from "./Icons";
 
 export default function Hero() {
@@ -108,15 +107,6 @@ export default function Hero() {
         </dl>
       </div>
 
-      <div className="mt-14 flex justify-center">
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-xs text-mute transition hover:text-accent"
-        >
-          Scroll
-          <ArrowDownIcon className="h-4 w-4 animate-bounce" />
-        </a>
-      </div>
     </section>
   );
 }
